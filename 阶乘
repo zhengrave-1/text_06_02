@@ -1,0 +1,37 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+//1-10的阶乘的和
+int main()
+{
+	int a = 0;
+	int ret = 1;
+	int sum = 0;
+	for (a = 1; a < 10; a++)
+	{
+		ret = a * ret;
+		sum = ret + sum;
+		printf("%d\n", sum);
+	}
+	return 0;
+}
+
+
+
+
+
+//阶乘
+int main()
+{
+	int a = 0;
+	double ret = 1;
+	int n = 0;
+	printf("请输入要进行阶乘运算的数字：");
+	scanf("%d", &n);
+	for (a = 1; a < n; a++)
+	{
+		ret = a * ret;
+		printf("%lf\n", ret);
+
+	}
+	return 0;
+}
